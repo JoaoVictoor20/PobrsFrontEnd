@@ -27,9 +27,9 @@ class DeletarPedido extends Component {
     }
 
     componentDidMount() {
-        const { id } = this.props.match.params;
+        const { idPedido } = this.props.match.params;
 
-        fetch(`${process.env.REACT_APP_API_URL}/sistema/pedidos/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/pedidos/${idPedido}`)
         .then(data => {
             data.json().then(data => {
                 if (data.error) {
@@ -60,8 +60,7 @@ class DeletarPedido extends Component {
                         <button onClick={this.handleClick} className="btn-delete">
                             Remover
                         </button>
-                        <br /><br />
-                        <Link to={`/pedidos`}>Voltar</Link>
+                        <Link to={`/pedidos`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>
             );
