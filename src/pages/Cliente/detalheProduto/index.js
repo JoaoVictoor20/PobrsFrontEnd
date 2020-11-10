@@ -21,14 +21,17 @@ export default class Produto extends Component {
         const { produto, index } = this.state;
 
         return (
-            <div className="produto-info">
-                <h1>{produto.nome}</h1>
-                <h2>ID - {produto.idProduto}</h2>
-                <h2>Valor - R${produto.precoVenda}</h2>
-                <b><p>Descrição: - {produto.descricao}</p></b>
-                <br />
+            <div className="base-details">
+                <div className="produto-info">
+                    <h1 className="info-nome">{produto.nome}</h1>
+                    <h2 className="info-id">ID - {produto.idProduto}</h2>
+                    <h2 className="info-pc">Preço de custo - {produto.precoCusto}</h2>
+                    <h2 className="info-valor">Valor de venda - R${produto.precoVenda}</h2>
+                    <b><p className="info-desc">Descrição: - {produto.descricao}</p></b>
+                    <br />
 
-                <Link to={`/produtos`}><button>Voltar</button></Link> <br />
+                    <Link to={`/produtos`}><button  className="btn-back">Voltar</button></Link> <br />
+                </div>
             </div>
         )
     };
