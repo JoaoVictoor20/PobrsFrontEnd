@@ -9,9 +9,9 @@ class CadastrarProduto extends Component {
         this.state = {
             produto: {
                 nome: "",
-                precoCusto: 0,
-                precoVenda: 0,
-                catProduto: 0,
+                precoCusto: null,
+                precoVenda: null,
+                catProduto: null,
                 descricao: '',
                 linkImg: ""
             },
@@ -100,7 +100,7 @@ class CadastrarProduto extends Component {
     };
 
     handleSubmit = event => { // Usar isso na rota /id/produtos para usar a rota pro carrinho com metodo post
-        fetch("${process.env.REACT_APP_API_URL}/sistema/cadastro/produtos", {
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/cadastro/produtos`, {
             method: "post",
             body: JSON.stringify(this.state.produto),
             headers: {

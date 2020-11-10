@@ -2,11 +2,12 @@
     background-color: whitesmoke;
     margin-top: 20px;
     width: 400px;
-    height: 120px;
+    height: 13rem;/*120px*/
     margin-left: 34%;
     border-radius: 15px;
     border: none;
     box-shadow: 3px 3px 9px 3px #424242;
+    min-height: fit-content;
 }
 
 .cards-pedidos h3 {
