@@ -27,7 +27,7 @@
     border-radius: 15px;
     border: none;
     float: right;
-    margin-top: -50px;
+    /*margin-top: -50px;*/
     margin-right: 20px;
     box-shadow: 2px 2px 8px 2px #424242;
     transition: all ease .3s;
