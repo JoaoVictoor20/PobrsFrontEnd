@@ -13,10 +13,12 @@ body {
 
 .base-controls {
     background-color: whitesmoke;
-    height: 100px;
-    width: 1000px;
-    margin-left: 13%;
+    /* height: 100px; */
+    /* width: 1000px; */
+    /* margin-left: 13%; */
     border-radius: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .controls {
