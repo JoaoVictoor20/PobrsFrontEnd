@@ -22,7 +22,7 @@ const Header = () => {
                 </a>
             </div>
             <div className="logo--text">
-                <h2>Elite Games Informática</h2>
+                <h2>Pobrs Informática</h2>
             </div>
             <div className="login">
                 {/*<button className="login--button" >Entrar</button>*/}
