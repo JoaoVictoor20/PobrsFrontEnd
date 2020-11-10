@@ -60,6 +60,7 @@ class DeletarProduto extends Component {
                         <button onClick={this.handleClick} className="btn-delete">
                             Remover Produto
                         </button>
+                        <br/>
                         <Link to={`/produtos`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>

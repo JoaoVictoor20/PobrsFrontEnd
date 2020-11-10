@@ -60,6 +60,7 @@ class DeletarPedido extends Component {
                         <button onClick={this.handleClick} className="btn-delete">
                             Remover
                         </button>
+                        <br/>
                         <Link to={`/pedidos`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>
