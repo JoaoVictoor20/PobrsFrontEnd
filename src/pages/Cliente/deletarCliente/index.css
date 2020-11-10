@@ -38,10 +38,8 @@ legend{
     color: crimson;
 }
 
-.cliente-delete button btn-delete{
+.cliente-delete btn-delete{
     cursor: pointer;
-    /* margin-left: 46.5%; */
-    /* margin-bottom: 30px; */
     width: 14rem;
     height: 2rem;
     border-radius: 20px;
