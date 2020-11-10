@@ -38,7 +38,7 @@ legend{
     color: crimson;
 }
 
-.cliente-delete btn-delete{
+.cliente-delete .btn-delete{
     cursor: pointer;
     width: 14rem;
     height: 2rem;
@@ -49,11 +49,22 @@ legend{
     text-decoration: none;
 }
 
-.cliente-delete btn-delete:hover{
+.cliente-delete .btn-delete:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 12px 4px #424242;
     background-color: rgb(224, 25, 11);
     color: white;
+}
+
+.cliente-delete button{
+    cursor: pointer;
+    width: 14rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 8px 2px #424242;
+    transition: all ease .3s;
+    text-decoration: none;
 }
 
 .cliente-delete button:hover{

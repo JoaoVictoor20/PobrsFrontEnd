@@ -38,7 +38,7 @@ legend{
     color: crimson;
 }
 
-.produto-delete button btn-delete{
+.produto-delete .btn-delete{
     cursor: pointer;
     /* margin-left: 46.5%; */
     /* margin-bottom: 30px; */
@@ -51,11 +51,22 @@ legend{
     text-decoration: none;
 }
 
-.produto-delete btn-delete:hover{
+.produto-delete .btn-delete:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 12px 4px #424242;
     background-color: rgb(224, 25, 11);
     color: white;
+}
+
+.produto-delete button{
+    cursor: pointer;
+    width: 14rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 8px 2px #424242;
+    transition: all ease .3s;
+    text-decoration: none;
 }
 
 .produto-delete button:hover{
