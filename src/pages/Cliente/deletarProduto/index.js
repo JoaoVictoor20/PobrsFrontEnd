@@ -52,16 +52,16 @@ class DeletarProduto extends Component {
                 <fieldset>
                     <legend>Deletar Produto</legend>
                     <div className="produto-delete">
-                        <label htmlFor="nome">{this.state.produto.nome}
+                        <label htmlFor="nome">Produto: {this.state.produto.nome}
                         </label>
 
                         <p>Tem certeza que deseja deletar este registro?</p>
 
-                        <button onClick={this.handleClick}>
+                        <button onClick={this.handleClick} className="btn-delete">
                             Remover Produto
                         </button>
                         <br /><br />
-                        <Link to={`/produtos`}>Voltar</Link>
+                        <Link to={`/produtos`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>
             );

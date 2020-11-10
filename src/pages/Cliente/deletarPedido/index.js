@@ -52,16 +52,16 @@ class DeletarPedido extends Component {
                 <fieldset>
                     <legend>Deletar Pedido</legend>
                     <div className="pedido-delete">
-                        <label htmlFor="nome">{this.state.pedido.nomeProd}
+                        <label htmlFor="nome">Produto: {this.state.pedido.nomeProd}
                         </label>
 
                         <p>Tem certeza que deseja deletar este registro?</p>
 
-                        <button onClick={this.handleClick}>
+                        <button onClick={this.handleClick} className="btn-delete">
                             Remover
                         </button>
                         <br /><br />
-                        <Link to={`/pedidos`}>Voltar</Link>
+                        <Link to={`/pedidos`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>
             );

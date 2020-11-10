@@ -37,8 +37,8 @@ export default class Main extends Component {
                         <arcticle key={produto._id}>
                             <img src={`${produto.linkImg}`} alt="#" 
                             width="300px" height="300px"></img>
-                            <p>Preço: R${produto.precoVenda}</p>
-                            <p>Descrição: {produto.descricao}</p>
+                            <p><strong>Preço: R$</strong>{produto.precoVenda}</p>
+                            <p><strong>Descrição: </strong>{produto.descricao}</p>
                             <div className="buttons">
                             <Link to={`/produtosDetail/${produto.idProduto}`}><button type="submit"className="btn-cadastro-product">Detalhes</button></Link>
                             <Link to={`/deleteProduto/${produto.idProduto}`}><button type="submit" className="btn-cadastro-product">Remover Produto</button></Link>

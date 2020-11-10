@@ -52,16 +52,18 @@ class DeletarUsuario extends Component {
                 <fieldset>
                     <legend>Deletar Cliente</legend>
                     <div className="cliente-delete">
-                        <label htmlFor="nome">{this.state.cliente.nome}
+                        <label htmlFor="nome">Nome do Cliente: {this.state.cliente.nome}
+                        </label>
+                        <label htmlFor="cpf">CPF do Cliente: {this.state.cliente.cpf}
                         </label>
 
                         <p>Tem certeza que deseja deletar este registro?</p>
 
-                        <button onClick={this.handleClick}>
+                        <button onClick={this.handleClick} className="btn-delete">
                             Remover
                         </button>
                         <br /><br />
-                        <Link to={`/clientes`}>Voltar</Link>
+                        <Link to={`/clientes`}><button>Voltar</button></Link>
                     </div>
                 </fieldset>
             );
